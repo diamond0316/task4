@@ -30,7 +30,7 @@
         padding:9.8% 0;
     }
     #header img{
-        max-height:56px;
+        max-width:100%;
         float:left;
         position:absolute;
         top:50.38%;
@@ -164,16 +164,62 @@
         padding:1.5% 5%;
         margin-right: 5%;
     }
-        @media  screen and (max-device-width: 400px);
-        #header:
+    @media  screen and (min-device-width: 320px) {
+        * {
+            font-size: 0.75em;
+
+        }
+        #content h2{font-size:2.5em;}
+        img{
+        width:8%;
+        }
+        #content img{width:50%;}
+        #header img{
+            float:left;
+            position:absolute;
+            top:35.38%;}
+        #menu{
+            width:100%;
+            padding:2% 0.5%;
+            position:fixed;
+            bottom:0;
+
+            background: #29bde0;
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#4dff0000, endColorstr=#4dff0000);
+        }
+        :root #menu {
+            filter: none;
+            background-color: #29bde0;
+            background-color: rgba(41, 189, 240, 0.6);
+        }
+        #left{
+            font-size:2.5em;
+            float:left;
+            border-radius:.3em;
+            background-color:#f66f6f;
+            color:#fff;
+            padding:1.5% 5%;
+            margin-left:5%;
+        }
+        #right{
+            font-size:2.5em;
+            float:right;
+            border-radius:.5em;
+            background-color:#fbb435;
+            color:#fff;
+            padding:1.5% 5%;
+            margin-right: 5%;
+        }
+    }
+
     </style>
 </head>
 <body>
 <div id="wrapper">
     <div id="header">
-        <a><img src="images/home.png" style="left:3.4%; max-width:100%;"></a>
+        <a><img class="home" src="images/home.png" style="left:3.4%; max-width:100%;"></a>
         <h2>游戏结束</h2>
-        <a><img src="images/tips.png" style="right:3.4%;max-widht:100%"></a>
+        <a><img class="tips" src="images/tips.png" style="right:3.4%;max-widht:100%"></a>
     </div>
     <div id="content">
         <img src="images/victory.png" >
