@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>task4</title>
+    <style>
+        /* body-S*/
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        font-size:100%;
+        font-family:"Microsoft Yahei",微软雅黑;
+    }
+        /*body-E*/
+    #wrapper{
+        margin:0 auto;
+        max-width:640px;
+        max-height:1136px;
+        background:#29bde0;
+        position:relative;
+    }
+        /*header-S*/
+    #header{
+        width:100%;
+        border-bottom:1px solid #ffffff;
+        position:relative;
+        padding:9.8% 0;
+    }
+    #header img{
+        max-height:56px;
+        float:left;
+        position:absolute;
+        top:50.38%;
+    }
+    #header h2{
+        float:left;
+        color:#fff;
+        font-size:2.125em;
+        position:absolute;
+        top:50.38%;
+        left:39%;
+    }
+    /*content-S*/
+    #content{
+        width:100%;
+        padding:53% 0;
+        border-bottom:1px solid #000;
+        position:relative;
+    }
+        #content img{
+            max-width:100%;
+            float:left;
+            position:absolute;
+            top:4%;
+            left:22.3%;
+        }
+        #content h2{
+            display:block;
+            width:75%;
+            font-size:2em;
+            position:absolute;
+            top:36%;
+            left:14.3%;
+            text-align:justify;
+            color:#ffc865;
+        }
+
+
+    #content span p{
+        color: #ffffff;
+        display:block;
+        width:100%;
+        font-size:1.625em;
+    }
+    #first-line{
+        font-size:1.625em;
+        position:absolute;
+        top:67%;
+        left:14.8%;
+        width:72.65%;
+        color:#ffffff;
+    }
+    #second-line{
+        font-size:1.625em;
+        position:absolute;
+        top:73%;
+        left:14.8%;
+        width:72.65%;
+        color: #ffffff;
+    }
+    #first-line li,#second-line li{
+        float:left;
+        display:block;
+        width:30%;
+    }
+        /*content-E*/
+     #column{
+            width:100%;
+            background:#ffffff;
+            border:1px solid #000000;
+            position:relative;
+     }
+     .date{
+         padding:5% 0;
+         border-bottom:1px solid #000;
+         position:relative;
+     }
+     .date h3{
+         float:left;
+         font-size:1.875em;
+         color:#000;
+         font-weight:500;
+         position:absolute;
+         top:10%;
+         left:5%;
+     }
+     .date h5{
+         float:right;
+         font-size:1.25em;
+         color:#c7c7c7;
+         font-weight:300;
+
+     }
+     .date h4{
+         font-size:1.62em;
+         color:#a6a6a6;
+         clear:both;
+         font-weight:500;
+         margin-left:5%;
+     }
+    #menu{
+        width:640px;
+        padding:1% 0;
+        position:fixed;
+        bottom:0;
+
+        background: #29bde0;
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#4dff0000, endColorstr=#4dff0000);
+    }
+    :root #menu {
+        filter: none;
+        background-color: #29bde0;
+        background-color: rgba(41, 189, 240, 0.6);
+    }
+    #left{
+        font-size:2.5em;
+        float:left;
+        border-radius:.3em;
+        background-color:#f66f6f;
+        color:#fff;
+        padding:1.5% 5%;
+        margin-left:5%;
+    }
+    #right{
+        font-size:2.5em;
+        float:right;
+        border-radius:.5em;
+        background-color:#fbb435;
+        color:#fff;
+        padding:1.5% 5%;
+        margin-right:5%;
+    }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <a><img src="images/home.png" style="left:3.4%";></a>
+        <h2>游戏结束</h2>
+        <a><img src="images/tips.png" style="right:3.4%";></a>
+    </div>
+    <div id="content">
+        <img src="images/victory.png" >
+        <h2>太棒了!你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！</h2>
+        <span style="position:absolute;top:61%;left:14.8%;"><p>本次游戏共计用时0小时25分钟</p></span>
+        <ul id="first-line">
+            <li><p>杀&nbsp;&nbsp;&nbsp;手0人</p></li>
+            <li><p>警&nbsp;&nbsp;&nbsp;察1人</p></li>
+            <li><p>平&nbsp;&nbsp;&nbsp;民6人</p></li>
+        </ul>
+        <ul id="second-line">
+            <li><p>狙击手1人</p></li>
+            <li><p>医&nbsp;&nbsp;&nbsp;生1人</p></li>
+        </ul>
+        <span style="position:absolute;top:79%;left:14.8%;"><p>卧底词汇：爱新觉罗</p></span>
+        <span style="position:absolute;top:85%;left:14.8%;"><p>水民词汇：努尔哈赤</p></span>
+    </div>
+    <div id="column">
+        <div class="date"><h3>第一天</h3><h5>0小时07分</h5><h4>晚上：5号被杀手杀死，5号是水民</h4><h4>白天：8号被全民投票投死，8号是杀手</h4></div>
+        <div class="date"><h3>第二天</h3><h5>0小时07分</h5><h4>晚上：5号被杀手杀死，5号是水民</h4><h4>白天：8号被全民投票投死，8号是杀手</h4></div>
+        <div class="date"><h3>第三天</h3></div>
+        <div id="menu">
+            <div id="left">再来一局</div>
+            <div id="right">上传并分享</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
