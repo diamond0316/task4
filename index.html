@@ -132,8 +132,9 @@
          margin-left:5%;
      }
     #menu{
-        width:640px;
-        padding:1% 0;
+        width:33%;
+        max-width:640px;
+        padding:1% 0.5%;
         position:fixed;
         bottom:0;
 
@@ -161,17 +162,18 @@
         background-color:#fbb435;
         color:#fff;
         padding:1.5% 5%;
-        margin-right:5%;
+        margin-right: 5%;
     }
-
+        @media  screen and (max-device-width: 400px);
+        #header:
     </style>
 </head>
 <body>
 <div id="wrapper">
     <div id="header">
-        <a><img src="images/home.png" style="left:3.4%";></a>
+        <a><img src="images/home.png" style="left:3.4%; max-width:100%;"></a>
         <h2>游戏结束</h2>
-        <a><img src="images/tips.png" style="right:3.4%";></a>
+        <a><img src="images/tips.png" style="right:3.4%;max-widht:100%"></a>
     </div>
     <div id="content">
         <img src="images/victory.png" >
