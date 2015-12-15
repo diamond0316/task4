@@ -45,10 +45,12 @@
     }
     /*content-S*/
     #content{
+        max-widht:640px;
         width:100%;
         padding:53% 0;
         border-bottom:1px solid #000;
         position:relative;
+
     }
         #content img{
             max-width:100%;
@@ -98,6 +100,7 @@
     }
         /*content-E*/
      #column{
+            max-width:640px;
             width:100%;
             background:#ffffff;
             position:relative;
@@ -130,39 +133,47 @@
          font-weight:500;
          margin-left:5%;
      }
-    #menu{
+     #menu{
 
-        padding:1% 0;
-        position:fixed;
-        bottom:0;
-
-        background: #29bde0;
-        filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#4dff0000, endColorstr=#4dff0000);
-    }
-    :root #menu {
-        filter: none;
-        background-color: #29bde0;
-        background-color: rgba(41, 189, 240, 0.6);
-    }
-    #left{
-        font-size:2.5em;
-        float:left;
-        border-radius:.3em;
-        background-color:#f66f6f;
-        color:#fff;
-        padding:0.5% 5%;
-        margin-left:5%;
-    }
-    #right{
-        font-size:2.5em;
-        float:right;
-        border-radius:.5em;
-        background-color:#fbb435;
-        color:#fff;
-        padding:0.5% 5%;
-        margin-right: 5%;
-    }
-    /*min-320-s*/
+            max-width:640px;
+            width:100%;
+            position:fixed;
+            bottom:0;
+            margin:0 auto;
+            padding:1% 0;
+            background: #29bde0;
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#4dff0000, endColorstr=#4dff0000);
+     }
+     :root #menu {
+            filter: none;
+            background-color: #29bde0;
+            background-color: rgba(41, 189, 240, 0.6);
+     }
+     #left{
+            width:20%;
+            font-size:1.5em;
+            border-radius:.3em;
+            background-color:#f66f6f;
+            color:#fff;
+            display:inline-block;
+            position:relative;
+            left:5%;
+            top:2.5%;
+            text-align: center;
+     }
+     #right{
+            width:25%;
+            font-size:1.5em;
+            float:right;
+            border-radius:.5em;
+            background-color:#fbb435;
+            color:#fff;
+            display:inline-block;
+            position:relative;
+            right:5%;
+            top:2.5%;
+     }
+  /*min-320-s*/
     @media  screen and (min-device-width: 320px) {
         * {
             font-size: 0.75em;
@@ -173,42 +184,8 @@
         width:8%;
         }
         #content img{width:50%;}
-        #header img{
-            float:left;
-            position:absolute;
-            top:35.38%;}
-        #menu{
-            width:100%;
-            padding:2% 0.5%;
-            position:fixed;
-            bottom:0;
-
-            background: #29bde0;
-            filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#4dff0000, endColorstr=#4dff0000);
-        }
-        :root #menu {
-            filter: none;
-            background-color: #29bde0;
-            background-color: rgba(41, 189, 240, 0.6);
-        }
-        #left{
-            font-size:2.5em;
-            float:left;
-            border-radius:.3em;
-            background-color:#f66f6f;
-            color:#fff;
-            padding:1.5% 5%;
-            margin-left:5%;
-        }
-        #right{
-            font-size:2.5em;
-            float:right;
-            border-radius:.5em;
-            background-color:#fbb435;
-            color:#fff;
-            padding:1.5% 5%;
-            margin-right: 5%;
-        }
+        #left p{font-size:1.5em;}
+        #right p{font-size:1.5em;}
     }
         /*min-320-e*/
         /*min-768-s*/
@@ -218,114 +195,21 @@
 
             }
             #content h2{font-size:2.4em;}
-            #menu{
-                width:82.5%;
-                padding:2% 0.5%;
-                position:fixed;
-                bottom:0;
 
-                background: #29bde0;
-                filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#4dff0000, endColorstr=#4dff0000);
-            }
-            :root #menu {
-                filter: none;
-                background-color: #29bde0;
-                background-color: rgba(41, 189, 240, 0.6);
-            }
-            #left{
-                font-size:2.5em;
-                float:left;
-                border-radius:.3em;
-                background-color:#f66f6f;
-                color:#fff;
-                padding:1.5% 5%;
-                margin-left:5%;
-            }
-            #right{
-                font-size:2.5em;
-                float:right;
-                border-radius:.5em;
-                background-color:#fbb435;
-                color:#fff;
-                padding:1.5% 5%;
-                margin-right: 5%;
-            }
-            @media  screen and (min-device-width: 1280px){
-                * {
-                    font-size: 1em;
+        @media  screen and (min-device-width: 1280px){
+             * {
+                 font-size: 1em;
 
-                }
-                #content h2{font-size:2.4em;}
-                #menu{
-                    width:49.7%;
-                    padding:2% 0.5%;
-                    position:fixed;
-                    bottom:0;
+             }
+             #content h2{font-size:2.4em;}
 
-                    background: #29bde0;
-                    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#4dff0000, endColorstr=#4dff0000);
-                }
-                :root #menu {
-                    filter: none;
-                    background-color: #29bde0;
-                    background-color: rgba(41, 189, 240, 0.6);
-                }
-                #left{
-                    font-size:1.5em;
-                    float:left;
-                    border-radius:.3em;
-                    background-color:#f66f6f;
-                    color:#fff;
-                    padding:1.5% 5%;
-                    margin-left:5%;
-                }
-                #right{
-                    font-size:1.5em;
-                    float:right;
-                    border-radius:.5em;
-                    background-color:#fbb435;
-                    color:#fff;
-                    padding:1.5% 5%;
-                    margin-right: 5%;
-                }
-                @media  screen and (min-device-width: 1600px){
-                    * {
-                        font-size: 1em;
+        @media  screen and (min-device-width: 1600px){
+             * {
+                  font-size: 1em;
 
-                    }
-                    #content h2{font-size:2.4em;}
-                    #menu{
-                        width:39%;
-                        padding:1% 0.5%;
-                        position:fixed;
-                        bottom:0;
+             }
+             #content h2{font-size:2.4em;}
 
-                        background: #29bde0;
-                        filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#4dff0000, endColorstr=#4dff0000);
-                    }
-                    :root #menu {
-                        filter: none;
-                        background-color: #29bde0;
-                        background-color: rgba(41, 189, 240, 0.6);
-                    }
-                    #left{
-                        font-size:1.5em;
-                        float:left;
-                        border-radius:.3em;
-                        background-color:#f66f6f;
-                        color:#fff;
-                        padding:1.5% 5%;
-                        margin-left:5%;
-                    }
-                    #right{
-                        font-size:1.5em;
-                        float:right;
-                        border-radius:.5em;
-                        background-color:#fbb435;
-                        color:#fff;
-                        padding:1.5% 5%;
-                        margin-right: 5%;
-                    }
         }
 
     </style>
@@ -357,10 +241,11 @@
         <div class="date"><h3>第一天</h3><h5>0小时07分</h5><h4>晚上：5号被杀手杀死，5号是水民</h4><h4>白天：8号被全民投票投死，8号是杀手</h4></div>
         <div class="date"><h3>第二天</h3><h5>0小时07分</h5><h4>晚上：5号被杀手杀死，5号是水民</h4><h4>白天：8号被全民投票投死，8号是杀手</h4></div>
         <div class="date"><h3>第三天</h3></div>
-        <div id="menu">
-            <div id="left">再来一局</div>
-            <div id="right">上传并分享</div>
-        </div>
+
+    </div>
+    <div id="menu">
+        <div id="left"><p>再来一局</p></div>
+        <div id="right"><p>上传并分享</p></div>
     </div>
 </div>
 </body>
